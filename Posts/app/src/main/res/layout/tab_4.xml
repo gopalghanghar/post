@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/activity_user_profile"
+        android:id="@+id/user_profile_content_layout"/>
+
+    <include
+        layout="@layout/login_required_layout"
+        android:id="@+id/login_required_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        />
+
+</RelativeLayout>

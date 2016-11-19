@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#90a4ae"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Titlea klsdfjkasjdflkjaslkdf"
+        android:id="@+id/viewQuestionTitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Detail lskfjlas flkajslkfdlksajdfkl"
+        android:id="@+id/viewQuestionDetail"
+        android:layout_below="@+id/viewQuestionTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:src="@android:drawable/sym_def_app_icon"
+        android:id="@+id/viewQuestionUserImage"
+        android:layout_below="@+id/viewQuestionDetail"
+        android:layout_toStartOf="@+id/viewQuestionUsername" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User name"
+        android:id="@+id/viewQuestionUsername"
+        android:layout_alignTop="@+id/viewQuestionUserImage"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:id="@+id/viewQuestionDate"
+        android:layout_alignBottom="@+id/viewQuestionUserImage"
+        android:layout_alignEnd="@+id/viewQuestionDetail" />
+</RelativeLayout>

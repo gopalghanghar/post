@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EEE"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Answer Detail"
+        android:id="@+id/viewAnswerDetail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:src="@android:drawable/sym_def_app_icon"
+        android:id="@+id/viewAnswerUserImage"
+        android:layout_below="@+id/viewAnswerDetail"
+        android:layout_toStartOf="@+id/viewAnswerUsername" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user name"
+        android:id="@+id/viewAnswerUsername"
+        android:layout_above="@+id/viewAnswerDate"
+        android:layout_alignEnd="@+id/viewAnswerDetail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:id="@+id/viewAnswerDate"
+        android:layout_alignBottom="@+id/viewAnswerUserImage"
+        android:layout_alignEnd="@+id/viewAnswerUsername" />
+
+</RelativeLayout>

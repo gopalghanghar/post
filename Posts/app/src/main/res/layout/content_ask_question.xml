@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/askQuestionTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="What is your question ? Be specific"
+            android:imeActionId="@+id/askQuestionAction"
+            android:imeActionLabel="askQuestion"
+            android:imeOptions="actionUnspecified"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/askQuestionDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Body"
+            android:imeActionId="@+id/askQuestionAction"
+            android:imeActionLabel="askQuestion"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textMultiLine"
+            android:gravity="top|left"
+            android:maxLines="10"
+            android:minLines="10"
+            android:lines="10"
+            android:singleLine="false" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <MultiAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeActionId="@+id/askQuestionAction"
+            android:imeActionLabel="askQuestion"
+            android:imeOptions="actionUnspecified"
+            android:hint="Tags"
+            android:id="@+id/askQuestionTags"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+
+        android:id="@+id/askPostQuestionBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Post Question"
+        />
+
+
+</LinearLayout>
